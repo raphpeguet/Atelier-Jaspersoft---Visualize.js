@@ -32,7 +32,7 @@
 	
 	
 	<!-- Visualize.js -->	
-	<!-- LAB_1_1 --> 
+	<!-- MODULE_1_1 --> 
 	<!--<script src="http://localhost:8080/jasperserver-pro/client/visualize.js?_opt=false"></script>-->
 	<script src="assets/js/visualizejs_main.js"></script>	
 
@@ -72,7 +72,7 @@
 
 
 	
-	<!-- ========== HEADER SECTION ========== -->
+	<!-- ========== SECTION HAUT DE PAGE ========== -->
 	<section id="home" name="home"></section>
 	<div id="headerwrap">
 		<div class="container">
@@ -90,7 +90,7 @@
 	</div><!-- /headerwrap -->
 	
 	
-	<!-- ========== WHITE SECTION ========== -->
+	<!-- ========== SECTION BLANCHE ========== -->
 	<div id="w">
 		<div class="container">
 			<div class="row">
@@ -104,7 +104,7 @@
 		</div><!-- /container -->
 	</div><!-- /w -->
 	
-	<!-- ========== SERVICES - GREY SECTION ========== -->
+	<!-- ========== SERVICES - SECTION GRISE ========== -->
 	<section id="features" name="features"></section>
 	<div id="g">
 		<div class="container">
@@ -147,10 +147,10 @@
 				<br>
 				<h4>1 - Ajoutez la référence à la librairie Visualize.js dans la page web</h4>	
 				<p>Ouvrez cette page HTML (index.html) avec votre éditeur préféré.<br>
-				Recherchez la ligne de commentaire avec la mention <b>LAB_1_1</b> dans la page et rajoutez la référence à la librairie Visualize.js en utilisant les 2 lignes ci-dessous. Une fois le fichier modifié, sauvegardez-le<br>
+				Recherchez la ligne de commentaire avec la mention <b>MODULE_1_1</b> dans la page et rajoutez la référence à la librairie Visualize.js en utilisant les 2 lignes ci-dessous. Une fois le fichier modifié, sauvegardez-le<br>
 				Remarque: La librairie se trouve sur votre instance JasperReport Server et l'URL peut donc être différente.
 <pre class="brush: xml;">
-&lt;!-- LAB_1_1 --&gt; 
+&lt;!-- MODULE_1_1 --&gt; 
 &lt;script src=&quot;http://localhost:8080/jasperserver-pro/client/visualize.js&quot;&gt;&lt;/script&gt;
 </pre>
 				</p>
@@ -179,9 +179,9 @@ visualize({
 		</div><!-- /container -->
 	</div><!-- /w -->
 	
-	<!-- ========== LAB 2 ========== -->
+	<!-- ========== MODULE 2 ========== -->
 	<section id="lab2" name="lab2"></section>
-	<!-- ========== CHARTS - WHITE SECTION ========== -->
+	<!-- ========== GRAPHIQUES - SECTION BLANCHE ========== -->
 	<div id="dg" class="lab">
 		<div class="container">
 			<div class="row">
@@ -315,7 +315,7 @@ if (link.type == &quot;ReportExecution&quot;) {
 		</div><!-- /container -->
 	</div><!-- /w -->
 	
-		<!-- ========== LAB 3 ========== -->
+		<!-- ========== MODULE 3 ========== -->
 	<section id="lab3" name="lab3"></section>
 	<div class="lab alt">
 		<div class="container">
@@ -346,7 +346,7 @@ if (link.type == &quot;ReportExecution&quot;) {
 				Maintenant vous avez compris la syntax pour embarquer un rapport dans une page Web.<br>
 				Ici il n'y a qu'une petite différence.<br>
 				Notre fonction va appeler notre rapport qui doit donc devenir une variable.<br>
-				Cela se fait en passant la référence à l'identifiant de l'emplacement HTML via une option Visualize.js<br>
+				Cela se fait en passant la référence à l'identifiant de l'emplacement HTML via une option Visualize.js (<b>resource</b>)<br>
 				et ainsi nous pourrons modifier le rapport à volonté.<br>
 				Remarquez que nous donnons aussi un nom (drinkFoodReport) à la variable rapport.<br>
 				
@@ -365,7 +365,9 @@ var drinkFoodReport = v.report({
 				<br>
 				<h4>2 - Ajout de la fonction pour le filtre sur la nourriture (poulet)</h4>	
 				<p>
-				Les images ont un identifiant spécifique : <b>foodImage</b>, <b>drinkImage</b>.<br>
+				Notre rapport s'affiche et il s'affiche même en français étant donnée que nous utilisons la locale fr au moment de l'authentifcation. Bon c'est vrai on aurait pû faire mieux dans la traduction de nos rapports en exemple!<br>
+				Maintenant faisons la liaison entre les images et le rapport.
+				Nous utiliserons pour cela leurs identifiants spécifiques : <b>foodImage</b> et <b>drinkImage</b>.<br>
 				Commençont par l'image de poulet (foodImage):
 				
 <pre class="brush: js;">
@@ -391,8 +393,9 @@ $(&quot;#foodImage&quot;).on(&quot;click&quot;, function() {
 				<br>
 				<h4>4 - Ajout de la sélection en contrôle d'entrée pour le rapport</h4>	
 				<p>
-				Notre rapport à donc un contrôle d'entrée qui prend la valeur de la famille de produit à afficher: Jaspersoft est conscient de la liste de valeurs disponibles.<br>
-				Nous allons donc maintenant afficher la liste de ces valeurs dans un menu déroulant.
+				Notre rapport à donc un contrôle d'entrée qui prend la valeur de la famille de produit à afficher et Jaspersoft est conscient de la liste des valeurs disponibles.<br>
+				Nous allons donc afficher la liste de ces valeurs dans un menu déroulant.<br>
+				Une fois le changement fait, le menu déroulant situé sous les 2 images sera remplit avec les options disponibles. Remarquez l'Option <b>Non-Consumable</b>.
 				
 <pre class="brush: js;">
 var inputControls = v.inputControls({
@@ -421,16 +424,16 @@ $(&quot;#productFamilySelector&quot;).on(&quot;change&quot;, function () {
 				</div>
 			</div>
 		</div><!-- /container -->
-	</div><!-- /LAB 3 -->
+	</div><!-- /MODULE 3 -->
 	
-	<!-- ========== LAB 4 ========== -->
+	<!-- ========== MODULE 4 ========== -->
 	<section id="lab4" name="lab4"></section>
 	<div class="lab">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 				<h3><bold>Module 4</bold> <br><br></h3>
-				<p>Intéressons-nous maintenant à l'intégration de tableaux de bord. En plus de l'embarquement nous allons aussi créer un menu déroulant présentant la liste des tableaux disponible sur le serveur.<br>
+				<p>Intéressons-nous maintenant à l'intégration de tableaux de bord. En plus de l'embarquement nous allons aussi créer un menu déroulant présentant la liste des tableaux disponibled sur le serveur.<br>
 				La liste des tableaux de bord sera extraite directement d'un dossier de JasperReports Server (JRS)</p>
 				
 				<br>
@@ -463,10 +466,11 @@ v(&quot;#div_dashboard_1&quot;).dashboard({
 				<br>
 				<h4>2 - Récupérer la liste des tableaux de bord de JRS</h4>	
 				<p>
+				Notre tableau de bord n'est pas traduit, c'est mieux ainsi!<br>
 				Le code ci-dessous envoie une requête Visualize.js afin de récupérer la liste des tableaux de bord dans
 				un dossier spécifique.
 				Remarquez la fonction appelé pour <i>Success</i>, <b>listRepository</b>, c'est une fonction que nous n'avons pas encore définie, ce sera l'object de la prochaine étape.<br>
-				Donc <b>procédez directement à la prochaine étape</b> (3) avant de raffraichir la page
+				Donc <b>procédez directement à la prochaine étape</b> (3) avant de raffraîchir la page
 				
 <pre class="brush: js;">
 v.resourcesSearch({
@@ -514,10 +518,10 @@ function listRepository(results) {
 				</div>
 			</div>
 		</div><!-- /container -->
-	</div><!-- /LAB 4 -->
+	</div><!-- /MODULE 4 -->
 	
 	
-		<!-- ========== BOSUN LABS ========== -->
+		<!-- ========== MODULES BONUS ========== -->
 	<section id="labBonus" name="labBonus"></section>
 	<div class="lab alt">
 		<div class="container">
@@ -533,11 +537,11 @@ function listRepository(results) {
 				<p>
 				À chaque fois qu'un tableau de bord est affiché, l'affichage revient au haut de page.<br>
 				Cela est dû à la propriété scrollToTop qui n'est pas exposé dans l'API.<br>
-				Ce comportement peut être modifier via le fichier de configuration de JasperReports Server.<br>
+				Ce comportement peut être modifié dans un fichier de configuration de JasperReports Server.<br>
 				Cela se fait dans le fichier suivant:<br>
 				<i>/apache-tomcat/webapps/jasperserver-pro/scripts/bower_components/bi-report/src/bi/report/view/ReportView.js</i><br>
-				Changez la ligne 192 par le code suivant.<br>
-				Notez que cela n'affectera que le code de Visualize.js en mode non compressé (paramètre _opt=false).
+				Changez la ligne 195 en remplaçant le <b>true</b> par <b>false</b>, la ligne deviendra donc comme ci-dessous.<br>
+				Notez que cela n'affectera que le code de Visualize.js en mode compressé (paramètre _opt=false dans l'url de Visualize.js en haut de la page index.html).
 				
 <pre class="brush: js;">
 scrollToTop = typeof this.stateModel.get(&quot;scrollToTop&quot;) === &quot;undefined&quot; ? false : this.stateModel.get(&quot;scrollToTop&quot;),
@@ -569,7 +573,7 @@ scrollToTop = typeof this.stateModel.get(&quot;scrollToTop&quot;) === &quot;unde
 				</div>
 			</div>
 		</div><!-- /container -->
-	</div><!-- /LAB 4 -->
+	</div><!-- /MODULE 4 -->
 	
 	
 	
@@ -593,7 +597,7 @@ scrollToTop = typeof this.stateModel.get(&quot;scrollToTop&quot;) === &quot;unde
 		</div><!-- /container -->
 	</div><!-- /portfoliowrap -->
 	
-	<!-- ========== WHITE SECTION ========== -->
+	<!-- ========== SECTION BLANCHE ========== -->
 	<div id="w">
 		<div class="container">
 			<div class="row">
@@ -605,7 +609,7 @@ scrollToTop = typeof this.stateModel.get(&quot;scrollToTop&quot;) === &quot;unde
 		</div><!-- /container -->
 	</div><!-- /w -->
 	
-	<!-- ========== ABOUT - GREY SECTION ========== -->
+	<!-- ========== À PROPOS - SECTION GRISE ========== -->
 	<section id="about" name="about"></section>
 	<div id="g">
 		<div class="container">
@@ -659,7 +663,7 @@ scrollToTop = typeof this.stateModel.get(&quot;scrollToTop&quot;) === &quot;unde
 		</div><!-- /container -->
 	</div><!-- /g -->
 	
-	<!-- ========== FOOTER SECTION ========== -->
+	<!-- ========== SECTION BAS DE PAGE ========== -->
 	<section id="contact" name="contact"></section>
 	<div id="f">
 		<div class="container">
