@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Jaspersoft - Atelier Visualize.js</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/underscore-min.js"></script>
+	
+	<!-- Code SyntaxHighlighter -->
+	<script type="text/javascript" src="assets/js/shCore.js"></script>
+	<script type="text/javascript" src="assets/js/shBrushJScript.js"></script>
+	<script type="text/javascript" src="assets/js/shBrushXml.js"></script>
+	<link type="text/css" rel="stylesheet" href="assets/css/shCoreDefault.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	
+	<!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+	
+	
+	<!-- Visualize.js -->	
+	<!-- LAB_1_1 --> 
+	<script src="http://localhost:8080/jasperserver-pro/client/visualize.js?_opt=false"></script>
+	<script src="assets/js/visualizejs_main.js"></script>	
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+		
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home">Jaspersoft</a></h1>
+			<i class="icon-remove menu-close"></i>
+			<a href="#home" class="smoothScroll">Accueil</a>
+			<a href="#features" class="smoothScroll">Le produit</a>
+			<a href="#lab1" class="smoothScroll">Module 1</a>
+			<a href="#lab2" class="smoothScroll">Module 2</a>
+			<a href="#lab3" class="smoothScroll">Module 3</a>
+			<a href="#lab4" class="smoothScroll">Module 4</a>
+			<a href="#labBonus" class="smoothScroll">Modules Bonus</a>
+			<a href="#externalReferences" class="smoothScroll">Ressources Externes</a>
+			<a href="#about" class="smoothScroll">À propos</a>
+			<a href="#contact" class="smoothScroll">Nous Contacter</a>
+			<a href="#"><i class="icon-facebook"></i></a>
+			<a href="#"><i class="icon-twitter"></i></a>
+			<a href="#"><i class="icon-dribbble"></i></a>
+			<a href="#"><i class="icon-envelope"></i></a>
+		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="icon-reorder"></i></div>
+	</nav>
+
+
+	
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<br>
+			<h1>Jaspersoft</h1>
+			<h2>Atelier - Embarquer la BI avec Visualize.js</h2>
+			<div class="row">
+				<br>
+				<br>
+				<br>
+				<div class="col-lg-6 col-lg-offset-3">
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	<!-- ========== WHITE SECTION ========== -->
+	<div id="w">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h3>BIENVENU À <bold>L'ATELIER VISUALIZE.JS</bold>. <br/>
+				UN ATELIER GUIDÉ ET GRATUIT <br/>ÉLABORÉ PAR <bold>L'ÉQUIPE AVANT-VENTE JASPERSOFT</bold>. <br/>
+					<bold>SPÉCIALEMENT CONÇUT POUR</bold> DES DÉVELOPEURS JAVASCRIPT & DES UTILISATEURS BI.
+				</h3>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /w -->
+	
+	<!-- ========== SERVICES - GREY SECTION ========== -->
+	<section id="features" name="features"></section>
+	<div id="g">
+		<div class="container">
+			<div class="row">
+				<h3>LE PRODUIT</h3>
+				<br>
+				<br>
+				<div class="col-lg-3">
+					<img src="assets/img/s1.png">
+					<h4>Embarquez votre BI dans votre app</h4>
+					<p>Révolutionnez votre application qu'elle soit on-premise ou dans le cloud en embarquant des tableaux de bord intéractifs, des graphiques modernes, un outil à la demande de création de rapports et une BI riche grâce à notre outil décisionel Web de façon simple et riche.</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="assets/img/s2.png">
+					<h4>La Big Data dans vos rapports</h4>
+					<p>Connectez-vous directement à vos données Hadoop, MongoDB, Cassandra et bien d'autres grâce à nos connecteurs natifs afin de les visualisez. Vous pourrez ainsi créer rapports, tableaux de bord et toutes votre analytic à partir de ces données sans avoir à les déplacer.</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="assets/img/s3.png">
+					<h4>Analyses et rapports pour votre companie</h4>
+					<p>Grâce à notre suite BI à la fois extensible, basée sur le Web et abordable, les utilisateurs métiers ont un accés direct aux réponses à leur questions à travers un outil à la demande de création de rapports, des tableaux de bord et de l'analytic pendant que le déploiement et l'infrasturcture est géré de façon optimal par les DSI.</p>
+				</div>
+				<div class="col-lg-3">
+					<img src="assets/img/s4.png">
+					<h4>Visualize.js</h4>
+					<p>Visualize.js enrichit votre application en permettant d'embarquer de façon complètement transparente des rapports et des graphiques facilement controlables. Avec Visualize.js Jaspersoft est la seule platforme qui intègre l'analytics dans votre app en suivant les mêmes standards que vos dévelopeurs.</p>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /g -->
+	
+	
+	<!-- ========== MODULE 1 ========== -->
+	<section id="lab1" name="lab1"></section>
+	<div class="lab alt">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h3><bold>Module 1</bold> <br/></h3>
+				<br>
+				<h4>1 - Ajoutez la référence à la librairie Visualize.js dans la page web</h4>	
+				<p>Ouvrez cette page HTML (index.html) avec votre éditeur préféré.<br>
+				Recherchez la ligne de commentaire avec la mention <b>LAB_1_1</b> dans la page et rajoutez la référence à la librairie Visualize.js en utilisant les 2 lignes ci-dessous. Une fois le fichier modifié, sauvegardez-le<br>
+				Reemarque: La librairie se trouve sur votre instance JasperReport Server et l'URL peut donc être différente.
+<pre class="brush: xml;">
+&lt;!-- LAB_1_1 --&gt; 
+&lt;script src=&quot;http://localhost:8080/jasperserver-pro/client/visualize.js&quot;&gt;&lt;/script&gt;
+</pre>
+				</p>
+				</br>
+				<h4>2 - Authentification</h4>	
+				<p>				
+				</p>Maintenant que nous avons référencé Visualize.js nous pouvons l'utiliser et la première étape est l'authentification. Cela se fait avec du code JavaScript que nous allons définir dans un fichier dédié.<br>
+				Ouvrez le fichier <i>assets/js/visualizejs_main.js</i> avec votre éditeur (le fichier est normalement vide).<br>
+				La première étape est de configurer la librairie avec le nom d'utilisateur et le mot de passe pour s'authentifier. Nous utiliserons la méthode basic, en production Visualize.js s'authentifiera via un token crypté.	
+
+<pre class="brush: js;">
+visualize({
+    auth: {
+        name: &quot;jasperadmin&quot;,
+        password: &quot;jasperadmin&quot;,
+        organization: &quot;organization_1&quot;
+    }
+}, function (v) {
+	/*ICI NOUS AJOUTERONS NOTRE CODE VISUALIZE>JS*/
+	alert('Visualize.js est prêt')
+
+});	
+</pre>			
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /w -->
+	
+	<!-- ========== LAB 2 ========== -->
+	<section id="lab2" name="lab2"></section>
+	<!-- ========== CHARTS - WHITE SECTION ========== -->
+	<div id="dg" class="lab">
+		<div class="container">
+			<div class="row">
+				<h3><bold>Module 2<bold></h3>
+				<br>
+				<br>
+				<div class="col-lg-4">
+					<div id="div_chart_1" align="center" class="chartContainerViz" >
+
+						<object type="image/svg+xml" data="assets/img/drawsvg.svg" width="80%" height="100%">
+							<param name="Title" value="CHART 1" />
+							<param name="DivId" value="Div Id: div_chart_1" />
+						 </object>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div id="div_chart_2" align="center" class="chartContainerViz" > 
+					
+						<object type="image/svg+xml" data="assets/img/drawsvg.svg" width="80%" height="100%">
+							<param name="Title" value="CHART 2" />
+							<param name="DivId" value="Div Id: div_chart_2" />
+						 </object>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div id="div_chart_3" align="center" class="chartContainerViz" > 
+						<object type="image/svg+xml" data="assets/img/drawsvg.svg" width="80%" height="100%">
+							<param name="Title" value="CHART 3" />
+							<param name="DivId" value="Div Id: div_chart_3" />
+						 </object>
+					</div>
+				</div>
+			
+			</div>	
+		</div><!-- /container -->
+	</div><!-- /dg -->
+	
+	
+	
+	<div class="lab">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h4>1 - Trouver un rapport à embarquer</h4>	
+				<p>	Ci-dessus il y a 3 emplacements, qui pour l'instant contiennent chacune une image.<br>
+				Chaque image donne le nom de la balise HTML div qui le contient.<br>
+				Pour commencer nous allons remplacer l'image du premier emplacement par un rapport de JasperReports Server avec Visualize.js.<br>
+				<b>1.1</b> - Ouvrez JasperReports Server (<a href="http://localhost:8080/jasperserver-pro/flow.html?_flowId=homeFlow&userLocale=fr_FR&j_username=jasperadmin%7Corganization_1&j_password=jasperadmin" target="_blank">lien</a>) (localhost port 8080).<br>
+				<b>1.2</b> - En utilisant le champ de recherche en haut à droite cherchez &quot;Demographic Report&quot; et puis Enter<br><br>
+				(Un aperçut écran est disponible en passant la sourie sur les textes en bleu dans ce module)<br>
+				La recherche devrait retourner <span class="showImage"><img src="assets/img/tutorial/02.png">un rapport</span> ouvrez-le pour le tester.<br>
+				<b>1.3</b> - Maintenant revenez à la page de recherche, cliquez-droit sur le nom du rapport, puis Propriété...<br>
+				Et copiez le <span class="showImage"><img src="assets/img/tutorial/01.png">chemin</span> c'est le chemin dont Visualize.js à besoin<br><br>
+				</p>
+				<h4>2 - Embarquez votre 1er rapport avec Visualize.js</h4>	
+				<p>
+				Maintenant ajoutons le code pour intégrer notre rapport dans notre page Web!<br>
+				<b>2.1</b> - Ouvrez le fichier visualizejs_main.js et remplacer la ligne générant une alerte par le code ci-dessous. Vérifier que l'option <b>resource</b> pointe vers notre rapport (même chemin).
+				
+<pre class="brush: js;">
+v(&quot;#div_chart_1&quot;).report({
+	resource: &quot;/public/Samples/Reports/02._Sales_Mix_by_Demographic_Report&quot;,
+	scrollToTop:false,
+	scale: &quot;height&quot;,
+	error: function (err) {
+		alert(err.message);
+	}
+});
+</pre>
+				<b>2.2</b> - Sauvegardez le fichier et raffraissez cette page! Notre rapport est intégré à l'emplacement choisi (un peu plus haut) tout simplement!
+				</p>
+				</br>
+				<h4>3 - Ajouter un graphique avec son intéractivité</h4>	
+				<p>Maintenant nous allons remplacer les 2 autres emplacement (Chart 2 et Chart 3) par 2 autres graphiques.<br>
+				Une fois les appels Visualize.js rajoutés seulement le 2ème graphique s'affichera, <br>le 3ème sera controlé par le 2ème en cliquant sur une portion.<br>
+				Premièrement ajoutons le 1er graphique, en générant seulement une alerte en cliquant sur une portion.<br>
+				Ajoutez le code qui suit juste après le code ajouté précédemment dans visualizejs_main.js:
+				
+<pre class="brush: js;">
+v(&quot;#div_chart_2&quot;).report({
+	resource: &quot;/public/Samples/Reports/States&quot;,
+	scrollToTop:false,
+	scale: &quot;height&quot;,
+	linkOptions: {
+		events: {
+			&quot;mouseOut&quot;:function (ev, link) {},
+			&quot;mouseOver&quot;:function (ev, link) {},
+			&quot;select&quot;:function (ev, link) {},
+			&quot;click&quot;: function (ev, link) {				
+				 if (link.type == &quot;ReportExecution&quot;) {
+					 alert('Vous avez cliqué sur l'État: '+ link.parameters.store_state);
+
+				}
+			}
+		}
+	},
+	error: function (err) {
+		alert(err.message);
+	}
+});
+</pre>			
+				</p>
+				<br>
+								<h4>4 - Extraction de donnée</h4>	
+				<p>Enfin dans ce module nous allons remplacer l'alerte par un appel à un rapport.<br>
+				Cela ne nécessitera encore une fois que quelque lignes de JavaScript<br>
+				Le code suivant doit être copié et collé à la place de la ligne d'alerte<br>
+				(les 3 lignes incluant le <b>if (link.type == &quot;ReportExecution&quot;)</b>):
+				
+<pre class="brush: js;">
+/*...
+if (link.type == &quot;ReportExecution&quot;) {*/
+	v(&quot;#div_chart_3&quot;).report({
+		resource: &quot;/public/Samples/Reports/Cities&quot;,
+		scrollToTop:false,
+		scale: &quot;height&quot;,
+		params: {
+			state: [link.parameters.store_state]
+		},
+	});
+	//console.log(link.parameters.store_state);
+/*
+}
+*/
+</pre>		
+				Une fois le fichier sauvegardé, et après un rafraîchissement de la page, vous pouvez tester votre première implémentation de BI intéractive dans une page Web en cliquant sur une portion du Camembert. Cela présentera un graphique à l'emplacement numéro 3 à la place de l'image.<br>
+				Pour chaque protion du camembert, un paramètre sera passé aux rapports en colonne<br>
+				C'est pour cela qu'en cliquant sur CA seul les villes en Californie s'affichent.<br>
+				Vous pouvez refaire le test autant que voulu, le graphique en colonne reste en mode écoute.
+				</p>
+				
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /w -->
+	
+		<!-- ========== LAB 3 ========== -->
+	<section id="lab3" name="lab3"></section>
+	<div class="lab alt">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h3><bold>Module 3</bold> <br><br></h3>
+				<p>Dans ce module nous allons lier les deux images ci-dessous avec un rapport grâce à une fonction JavaScript<br>
+				afin de le rafraîchir en lui passant le paramètre respectif.</p>
+				<div id="icon_params">
+					<img id="foodImage" src="assets/img/chicken-icon.png" class="clickable"/>
+					<img id="drinkImage" src="assets/img/drink-icon.png" class="clickable"/>
+				</div>
+				<br>
+				<select id="productFamilySelector"></select>
+				<br>
+				Identifiant du conteneur Div: &nbsp;&nbsp;&nbsp;<i>productFamilySelector</i>
+				<br>
+				<br>
+				<div id="div_report_1" align="center" class="reportContainerViz" >
+					<object type="image/svg+xml" data="assets/img/drawsvg.svg" width="100%" height="100%">
+						<param name="Title" value="REPORT 1" />
+						<param name="DivId" value="Div Id: div_report_1" />
+					 </object>					
+				</div>
+				<br><br>
+				<h4>1 - Ajouter un rapport dans l'emplacement réservé ci-dessous</h4>	
+				<p>
+				Maintenant vous avez compris la syntax pour embarquer un rapport dans une page Web.<br>
+				Ici il n'y a qu'une petite différence.<br>
+				Notre fonction va appeler notre rapport qui doit donc devenir une variable.<br>
+				Cela se fait en passant la référence à l'identifiant de l'emplacement HTML via une option Visualize.js<br>
+				et ainsi nous pourrons modifier le rapport à volonté.<br>
+				Remarquez que nous donnons aussi un nom (drinkFoodReport) à la variable rapport.<br>
+				
+<pre class="brush: js;">
+var drinkFoodReport = v.report({
+	resource: &quot;/public/Samples/Reports/06g.ProfitDetailReport&quot;,
+	scrollToTop:false,
+	scale: &quot;height&quot;,
+	container:&quot;#div_report_1&quot;,
+	error: function (err) {
+		alert(err.message);
+	}
+});
+</pre>
+				</p>
+				<br>
+				<h4>2 - Ajout de la fonction pour le filtre sur la nourriture (poulet)</h4>	
+				<p>
+				Les images ont un identifiant spécifique : <b>foodImage</b>, <b>drinkImage</b>.<br>
+				Commençont par l'image de poulet (foodImage):
+				
+<pre class="brush: js;">
+$(&quot;#foodImage&quot;).on(&quot;click&quot;, function() {
+	var params = {
+		ProductFamily: [&quot;Food&quot;]
+	};
+	
+	drinkFoodReport.params(params).run()
+		.fail(function(err) {
+			alert(err.message);
+		});
+	
+});
+</pre>
+				</p>
+				<br>
+				<h4>3 - Ajout de la fonction pour le filtre sur les boissons</h4>	
+				<p>
+				En prenant example sur imageFood, écrivez la fonction pour les boissons.<br>
+				Pour rappel l'identifiant de l'image est <b>drinkImage</b>
+				</p>
+				<br>
+				<h4>4 - Ajout de la sélection en contrôle d'entrée pour le rapport</h4>	
+				<p>
+				Notre rapport à donc un contrôle d'entrée qui prend la valeur de la famille de produit à afficher: Jaspersoft est conscient de la liste de valeurs disponibles.<br>
+				Nous allons donc maintenant afficher la liste de ces valeurs dans un menu déroulant.
+				
+<pre class="brush: js;">
+var inputControls = v.inputControls({
+	resource: &quot;/public/Samples/Reports/06g.ProfitDetailReport&quot;,
+	success: function(data){
+		var productFamilyInputControl = _.findWhere(data, {
+			id: &quot;ProductFamily&quot;});
+			
+		_.each(productFamilyInputControl.state.options, function (option) {
+			$(&quot;#productFamilySelector&quot;).append(&quot;&lt;option &quot; + 	
+				(option.selected ? &quot;selected&quot; : &quot;&quot;) + 
+				&quot; value='&quot; + option.value + &quot;'&gt;&quot; + 
+				option.label + 
+				&quot;&lt;/option&gt;&quot;);
+		});
+	}
+});
+
+$(&quot;#productFamilySelector&quot;).on(&quot;change&quot;, function () {
+	drinkFoodReport.params({
+		&quot;ProductFamily&quot;: [$(this).val()]
+	}).run();
+});
+</pre>
+				</p>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /LAB 3 -->
+	
+	<!-- ========== LAB 4 ========== -->
+	<section id="lab4" name="lab4"></section>
+	<div class="lab">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h3><bold>Module 4</bold> <br><br></h3>
+				<p>Intéressons-nous maintenant à l'intégration de tableaux de bord. En plus de l'embarquement nous allons aussi créer un menu déroulant présentant la liste des tableaux disponible sur le serveur.<br>
+				La liste des tableaux de bord sera extraite directement d'un dossier de JasperReports Server (JRS)</p>
+				
+				<br>
+				<select id="dashboardSelector"></select>
+				<br>
+				Identifiant du conteneur Div: &nbsp;&nbsp;&nbsp;<i>dashboardSelector</i>
+				<br>
+				<br>
+				<div id="div_dashboard_1" align="center" class="dashboardContainerViz" >
+					<object type="image/svg+xml" data="assets/img/drawsvg.svg" width="100%" height="100%">
+						<param name="Title" value="DASHBOARD 1" />
+						<param name="DivId" value="Div Id: div_dashboard_1" />
+					 </object>	
+				</div>
+				<br><br>
+				<h4>1 - Ajout du tableau de bord</h4>	
+				<p>
+				Ce n'est vraiment pas différent de l'intégration de rapport.<br>
+				Regardez:
+				
+<pre class="brush: js;">
+v(&quot;#div_dashboard_1&quot;).dashboard({
+	resource: &quot;/public/Samples/Dashboards/4._New_Dashboard&quot;,
+	error: function (err) {
+		alert(err.message);
+	}
+});
+</pre>
+				</p>
+				<br>
+				<h4>2 - Récupérer la liste des tableaux de bord de JRS</h4>	
+				<p>
+				Le code ci-dessous envoie une requête Visualize.js afin de récupérer la liste des tableaux de bord dans
+				un dossier spécifique.
+				Remarquez la fonction appelé pour <i>Success</i>, <b>listRepository</b>, c'est une fonction que nous n'avons pas encore définie, ce sera l'object de la prochaine étape.<br>
+				Donc <b>procédez directement à la prochaine étape</b> (3) avant de raffraichir la page
+				
+<pre class="brush: js;">
+v.resourcesSearch({
+	folderUri:&quot;/public/Samples/Dashboards&quot;,
+	recursive:false,
+	types:[&quot;dashboard&quot;],
+	success: listRepository,
+	error: function (err) {
+		alert(err.message);
+	}
+});
+</pre>
+				</p>
+				<br>
+			
+				<h4>3 - Remplissage du menu déroulant et affichage du tableau de bord</h4>	
+				<p>
+				cette dernière étape va nous permettre de parser le résultat (JSON) de notre recherche (étape précédente).<br>
+				Le menu déroulant sera rempli avec cette liste.
+<pre class="brush: js;">
+// Création de la liste depuis le référenciel
+function listRepository(results) {
+	var dSelector = $(&quot;#dashboardSelector&quot;);
+	dSelector.empty(); // enlève les options existante
+	$.each(results, function() {
+		dSelector.append($(&quot;&lt;option&gt;&lt;/option&gt;&quot;)
+		 .attr(&quot;value&quot;, this.uri).text(this.label));
+	});
+
+	//console.log($(&quot;#select&quot;));
+	dSelector.change(function() {
+		v.dashboard({
+				resource: this.value,
+				container: &quot;#div_dashboard_1&quot;,
+				error: function (err) {
+					alert(err.message);
+				}
+		});
+	});
+	// Utilisation d'un index pour selectionner une option à afficher par défaut.
+	$(&quot;#dashboardSelector option:eq(5)&quot;).prop(&quot;selected&quot;, true).change(); 
+}
+</pre>
+				</p>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /LAB 4 -->
+	
+	
+		<!-- ========== BOSUN LABS ========== -->
+	<section id="labBonus" name="labBonus"></section>
+	<div class="lab alt">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h3><bold>Modules Bonus</bold> <br><br></h3>
+				<p>Dans cette section vous trouverez des exercices supplémentaires qui vous ferons découvrir plus de fonctionalités Visualize.js.<br>
+				Ce sont des exercices avancés pour lesquels les solutions n'ont pas été apportées.<br>
+				L'utilisation de la documentation ou autres ressources listé dans la section RÉFÉRENCES EXTERNES est recommandée</p>
+				<br>
+				
+				<h4>Gérer la navigation forcée en haut de page</h4>	
+				<p>
+				À chaque fois qu'un tableau de bord est affiché, l'affichage revient au haut de page.<br>
+				Cela est dû à la propriété scrollToTop qui n'est pas exposé dans l'API.<br>
+				Ce comportement peut être modifier via le fichier de configuration de JasperReports Server.<br>
+				Cela se fait dans le fichier suivant:<br>
+				<i>/apache-tomcat/webapps/jasperserver-pro/scripts/bower_components/bi-report/src/bi/report/view/ReportView.js</i><br>
+				Changez la ligne 192 par le code suivant.<br>
+				Notez que cela n'affectera que le code de Visualize.js en mode non compressé (paramètre _opt=false).
+				
+<pre class="brush: js;">
+scrollToTop = typeof this.stateModel.get(&quot;scrollToTop&quot;) === &quot;undefined&quot; ? false : this.stateModel.get(&quot;scrollToTop&quot;),
+</pre>
+				</p>
+				<br>
+				<h4>1 - Affichage de la bar d'outil du rapport</h4>	
+				<p>
+				Ajout des boutons de gestion telle que celui permettant la navigation à travers les pages du rapport.
+				</p>
+				<br>
+				<h4>2 - Affichage du bouton d'export du rapport</h4>	
+				<p>
+				Ajoutez un menu déroulant permettant de selectionner un format ainsi que le bouton d'export<br>
+				Quand un utilisateur choisi le format d'export et click Exporter le rapport au format choise doit être téléchargé dans le navigateur.
+				</p>
+				<br>
+				<h4>3 - Controller les ancres et les recherches dans le rapport</h4>	
+				<p>
+				Ajoutez la possobilité pour l'utilisateur de naviguer rapidement à travers le rapport avec des ancres HTML.<br>
+				Faites de même avec un champs de texte permettant de le rechercher dans tout le rapport.
+				</p>
+				<br>
+				<h4>4 - Géré les liens dans un tableau de bord</h4>	
+				<p>
+				Ajoutez un évènement dans un lien hypertext d'un tableau de bord qui ouvrira un autre rapport ou un autre tableau de bord.
+				</p>
+			
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /LAB 4 -->
+	
+	
+	
+	<section id="externalReferences" name="externalReferences"></section>
+	<div id="portfoliowrap">
+		<div class="container">
+			<div class="row">
+				<h3>RÉFÉRENCES EXTERNES</h3>
+				<br>
+				<br>
+				<div class="col-lg-4 port-space">
+					<a href="assets/files/JasperReports-Server-Visualize.js-Guide.pdf" target="_blank"><img src="assets/img/work1.png"></a>
+				</div>
+				<div class="col-lg-4 port-space">
+					<a href="http://www.jaspersoft.com/embedded-bi-in-action" target="_blank"><img src="assets/img/work2.png"></a>
+				</div>
+				<div class="col-lg-4 port-space">
+					<a href="http://community.jaspersoft.com/sites/default/files/wiki_attachments/main_1.html" target="_blank"><img src="assets/img/work3.png"></a>
+				</div>				
+			</div>	
+		</div><!-- /container -->
+	</div><!-- /portfoliowrap -->
+	
+	<!-- ========== WHITE SECTION ========== -->
+	<div id="w">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h3><bold>EMBARQUEZ FACILEMENT L'ANALYTIC</bold> QUE LES UTILISATEURS <bold>ADORENT</bold> </br>ET AVEC LES OUTILS QUE LES DEVELOPEURS <bold>DEMANDENT</bold>.
+				</h3>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /w -->
+	
+	<!-- ========== ABOUT - GREY SECTION ========== -->
+	<section id="about" name="about"></section>
+	<div id="g">
+		<div class="container">
+			<div class="row">
+				<h3>À Propos</h3>
+				<br>
+				<br>
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+				<p>Les produits décisionels open source Jaspersoft compteNT plus de 14 million de téléchargements mondialement, 175,000 déploiement en production et plus de 14,000 clients professionels dans 100 pays. Sa suite d'outils s'enrichit régulièrement grâce à une communautée de plus de 225,000 membres inscrit. </br>L'<b>équipe d'avant-vente</b> est dédié à assister les professionels pendant tout le processus d'évaluation technique de Jaspersoft.</p>
+				<br>
+				<br>
+				</div>
+
+				<div class="col-lg-4 team">
+					<img class="img-circle" src="assets/img/team02.jpg" height="90" width="90">
+					<h4>Pierre Lambert</h4>
+					<h5><i>Senior Solutions Consultant (France)</i></h5>
+					<p>Co-Author of Jaspersoft ETL Plugin and Data Integration specialist</p>
+					<p>
+						<a href="https://fr.linkedin.com/in/pierre-lambert-493a0328/en"><i class="icon-linkedin"></i></a>
+						<a href="mailto:plambert@tibco.com?Subject=Suite%20%C3%A0%20l%27atelier%20visualizejs"><i class="icon-envelope"></i></a>
+
+					</p>
+				</div>
+
+				<div class="col-lg-4 team">
+					<img class="img-circle" src="assets/img/team03.jpg" height="90" width="90">
+					<h4>Raphaël Peguet</h4>
+					<h5><i>Senior Solutions Consultant (UK/Ireland)</i></h5>
+					<p>Main panelist in Jaspersoft Weekly Live Demos (English & French)</p>
+					<p>
+						<a href="https://www.linkedin.com/in/raphael-peguet-b993a46/"><i class="icon-linkedin"></i></a>
+						<a href="mailto:rpeguet@tibco.com?Subject=Suite%20%C3%A0%20l%27atelier%20visualizejs"><i class="icon-envelope"></i></a>
+
+					</p>
+				</div>
+
+				<div class="col-lg-4 team">
+					<img class="img-circle" src="assets/img/team04.jpg" height="90" width="90">
+					<h4>Guillaume Autier</h4>
+					<h5><i>Senior Manager Solutions Consultant Jaspersoft (EMEA)</i></h5>
+					<p>Jaspersoft Guru, 8+ years of experience with the solution.</p>
+					<p>
+						<a href="https://fr.linkedin.com/in/guillaumeautier"><i class="icon-linkedin"></i></a>
+						<a href="mailto:gautier@tibco.com?Subject=Suite%20%C3%A0%20l%27atelier%20visualizejs"><i class="icon-envelope"></i></a>
+
+					</p>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /g -->
+	
+	<!-- ========== FOOTER SECTION ========== -->
+	<section id="contact" name="contact"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+					<h3><b>Contactez nous</b></h3>
+					<br>
+					<div class="col-lg-4">	
+						<h3><b>Par téléphone:</b></h3>
+						<h3>+44 800-5200443</h3>
+						<br>
+					</div>
+					
+					<div class="col-lg-4">
+						<h3><b>Sur les réseaux sociaux</b></h3>
+						<p>
+							<a href="https://www.facebook.com/TIBCOJaspersoft" target="_blank"><i class="icon-facebook"></i></a>
+							<a href="https://twitter.com/jaspersoft" target="_blank"><i class="icon-twitter"></i></a>
+							<a href="http://www.jaspersoft.com/contact-us" target="_blank"><i class="icon-envelope"></i></a>
+						</p>
+						<br>
+					</div>
+					
+					<div class="col-lg-4">
+						<h3><b>Visitez note site:</b></h3>
+						<a href="http://www.jaspersoft.com" target="_blank"><h3>www.jaspersoft.com</h3></a>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /f -->
+	
+	<div id="c">
+		<div class="container">
+			<p>Créé par <a href="index.html#">Gianluca Natali</a></p>
+			<p>Traduit et mis-à-jour à 6.4 par <a href="index.html#">Raphaël Peguet</a></p>
+		</div>
+	</div>
+	
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
