@@ -520,7 +520,7 @@ function listRepository(results) {
 	</div><!-- /LAB 4 -->
 	
 	
-		<!-- ========== BOSUN LABS ========== -->
+		<!-- ========== BONUS LABS ========== -->
 	<section id="labBonus" name="labBonus"></section>
 	<div class="lab alt">
 		<div class="container">
@@ -538,9 +538,11 @@ function listRepository(results) {
 				Cela est dû à la propriété scrollToTop qui n'est pas exposé dans l'API.<br>
 				Ce comportement peut être modifier via le fichier de configuration de JasperReports Server.<br>
 				Cela se fait dans le fichier suivant:<br>
+				
 				<i>/apache-tomcat/webapps/jasperserver-pro/scripts/bower_components/bi-report/src/bi/report/view/ReportView.js</i><br>
-				Changez la ligne 192 par le code suivant.<br>
-				Notez que cela n'affectera que le code de Visualize.js en mode non compressé (paramètre _opt=false).
+				Changez la ligne 195 en remplaçant le <b>true</b> par <b>false</b>, la ligne deviendra donc comme ci-dessous.<br>
+				Notez que le cache du navigateur web doit être vidé (Ctrl+Shift+delete pour Chrome) pour prendre en compte le changement.<br>
+				Notez aussi que cela n'affectera que le code de Visualize.js en mode compressé (paramètre _opt=false dans l'url de Visualize.js en haut de la page index.html).
 				
 <pre class="brush: js;">
 scrollToTop = typeof this.stateModel.get(&quot;scrollToTop&quot;) === &quot;undefined&quot; ? false : this.stateModel.get(&quot;scrollToTop&quot;),
