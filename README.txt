@@ -17,10 +17,8 @@ Les fichiers solutions intermédiaires pour chaque module ont été enregistrés
 
 
 Amelioration:
-> Ajout fichier js manquant dans demarrer / atelier_visualizejs
 > explain better in each steps:
    > clear cache after changing scrolltotop = false for Dashboards.
-   > Etapes pour trouver atelier sur GitHub > RaphPeguet (à changer)
    > Mettre plus d'info sur readme (lisezmoi)
      > install JRS
      > Guide utilisateur
